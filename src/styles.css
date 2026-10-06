@@ -676,6 +676,13 @@ html[data-theme="dark"] .gh-cell.l0{fill:#383838}html[data-theme="dark"] .gh-cel
 html[data-theme="dark"] .gh-cell{stroke:rgba(255,255,255,.05)}
 html[data-theme="dark"] .gh-month{fill:#909090}
 .github-total{margin:16px 0 0;font:500 13px/1.55 var(--mono);letter-spacing:.035em;color:var(--white)}
+.hero-project-link{min-height:44px;align-items:center;gap:24px}
+.project-evidence{padding:0 0 24px 90px;position:relative;z-index:1}
+.project-evidence a{display:inline-flex;align-items:center;gap:18px;min-height:44px;color:var(--blue);font:500 10px var(--mono);letter-spacing:.08em;text-decoration:none;border-bottom:1px solid currentColor}
+.project-evidence a:hover{opacity:.8}
+.study.active .study-detail{max-height:none}
+@media(max-width:760px){.project-evidence{padding-left:36px}}
+@media(max-width:600px){.project-evidence{padding-left:30px}}
 .gh-skeleton{min-height:108px;display:grid;place-items:center;border:1px dashed var(--line);font:400 9px var(--mono);letter-spacing:.18em;color:var(--dim);animation:ghPulse 1.6s ease-in-out infinite}
 @keyframes ghPulse{50%{opacity:.5}}
 @media(max-width:760px){.github-activity{margin-top:52px}.github-activity-head{letter-spacing:.12em;font-size:9px}.github-activity-head span:first-child{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}

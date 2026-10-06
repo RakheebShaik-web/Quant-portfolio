@@ -6,11 +6,11 @@
     <meta http-equiv="refresh" content="86400">
     <meta name="theme-color" content="#0b0a09" />
     <script>
-      if (localStorage.getItem("rakheeb-theme-version") !== "2") {
-        localStorage.setItem("rakheeb-theme", "dark");
-        localStorage.setItem("rakheeb-theme-version", "2");
+      try {
+        document.documentElement.dataset.theme = localStorage.getItem("rakheeb-theme") === "light" ? "light" : "dark";
+      } catch {
+        document.documentElement.dataset.theme = "dark";
       }
-      document.documentElement.dataset.theme = localStorage.getItem("rakheeb-theme") || "dark";
     </script>
     <meta name="description" content="Rakheeb Shaikh is an algorithmic trader and quant developer building systematic trading systems across U.S. equities and Indian options." />
     <link rel="canonical" href="https://rakheeb.vercel.app/" />
