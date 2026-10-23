@@ -712,3 +712,16 @@ html[data-theme="dark"] .gh-month{fill:#909090}
 ::-webkit-scrollbar-thumb:hover{background:var(--blue)}
 .tool:hover{transform:scale(1.02)translateY(-3px);box-shadow:0 12px 30px rgba(240,75,25,.15)}
 html[data-theme= dark] .tool:hover{transform:scale(1.02)translateY(-3px);box-shadow:0 12px 30px rgba(7,7,6,.2)}
+
+/* Keep the expressive hero; let the rest read like a personal portfolio. */
+.work h2,.approach h2,.contact h2{font-family:var(--sans);font-size:clamp(36px,4.5vw,68px);font-weight:400;line-height:1.12;letter-spacing:-.045em;text-transform:none}
+.section-label p{letter-spacing:.06em;font-size:11px}
+.hero-art img{animation:none}
+/* Quiet supporting details; keep the artwork and orange accents prominent. */
+main:before{opacity:.45}
+.section-label p,.study-detail small{font-size:11px;letter-spacing:.025em;text-transform:none}
+.about-copy p.current-work{font:400 15px/1.75 var(--mono);letter-spacing:0;margin:0 0 28px;color:var(--white);max-width:660px}
+.current-work span{color:var(--blue)}
+.about-copy .offdesk{margin-top:28px}
+.offdesk:before{content:none}
+.tool:hover,html[data-theme=dark] .tool:hover{transform:translateY(-2px);box-shadow:none}
